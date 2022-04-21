@@ -1,0 +1,378 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans";
+  font-weight: 300;
+  /* 300 - light, 400 regular/italic, 700 - bold */
+}
+
+header {
+  width: 100%;
+  background: url(../imgs/header.jpg);
+  background-size: cover;
+}
+
+h1 {
+  width: 100%;
+  padding: 5em 0 3em 0;
+  font-family: "NotoLight";
+  font-size: 2.4em;
+  color: #fff;
+  text-align: center;
+  line-height: 2em;
+}
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+  font-family: "NotoLight";
+  margin-bottom: 1em;
+}
+
+h3 {
+  width: 100%;
+  font-family: "NotoRegular";
+}
+
+footer {
+  width: 100%;
+  background: #353f46;
+}
+footer p {
+  font-family: "NotoBold";
+  color: #06090b;
+  float: right;
+  margin: 0.6em 0 0.6em 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  font-family: "NotoBold";
+  font-size: 2em;
+  color: #fff;
+  transition: all ease 0.5s;
+}
+.logo:hover {
+  color: #4bcaff;
+  text-decoration: none;
+}
+
+.light-blue {
+  color: #4bcaff;
+}
+
+.nav-top {
+  width: 100%;
+  background: rgba(53, 63, 70, 0.7);
+  padding: 1.5em;
+}
+@media only screen and (max-width: 480px) {
+  .nav-top {
+    display: none;
+  }
+}
+.nav-top ul {
+  float: right;
+  margin: 0.6em 0 0;
+  padding: 0;
+}
+.nav-top ul li {
+  display: inline;
+  padding: 1em;
+  font-family: "NotoBold";
+  font-size: 0.9em;
+  color: #fff;
+}
+.nav-top ul li a {
+  display: inline-block;
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0);
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+.nav-top ul li a:hover {
+  color: #4bcaff;
+  border: 2px solid #4bcaff;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+.wh-border:after {
+  content: "";
+  display: block;
+  width: 1.7em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid #fff;
+}
+
+.dk-border:after {
+  content: "";
+  display: block;
+  width: 1.7em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid #353f46;
+}
+
+.around-title {
+  background: #353f46;
+  padding: 0 0.5em;
+}
+
+.services {
+  background: #4bcaff;
+  color: #fff;
+  padding: 4em 0 3em;
+}
+.services img {
+  margin: 1em 0;
+}
+.services p {
+  font-family: "NotoRegular";
+  font-size: 0.75em;
+}
+
+.portfolio {
+  padding: 4em 0;
+}
+.portfolio ul li {
+  display: inline;
+  cursor: pointer;
+  padding: 0.5em;
+  border: 2px solid #fff;
+  font-family: "NotoBold";
+  font-size: 0.9em;
+  transition: all ease 0.5s;
+}
+.portfolio ul li:hover {
+  border: 2px solid #4bcaff;
+  color: #4bcaff;
+}
+
+.work-items {
+  padding: 0;
+  text-align: center;
+}
+
+.work {
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  margin: 0.5em;
+  cursor: pointer;
+}
+.work img {
+  width: 100%;
+  height: auto;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  background: #353f46;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  padding: 0;
+  transition: opacity 0.5s;
+}
+.inner p {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-family: "NotoLight";
+  font-size: 3em;
+  color: #fff;
+}
+.inner:hover {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+.default-section {
+  background: #353f46;
+  color: #fff;
+  padding: 4em 0 1em;
+}
+.default-section p {
+  font-size: 0.75em;
+  line-height: 2em;
+}
+
+.visit-me {
+  display: inline-block;
+  margin: 1em 0 0;
+  color: #06090b;
+  border: 1px solid #06090b;
+  padding: 0.5em 2em;
+  font-size: 0.75em;
+  transition: all ease 0.5s;
+}
+.visit-me:hover {
+  color: #4bcaff;
+  border: 1px solid #4bcaff;
+  text-decoration: none;
+}
+
+.twitter {
+  background: #4bcaff;
+  color: #fff;
+  padding: 3em 0 1.5em;
+}
+.twitter i {
+  position: absolute;
+  right: 0;
+  font-size: 2.5em;
+}
+.twitter p {
+  font-size: 1.75em;
+  font-family: "NotoLight";
+}
+
+.mention {
+  font-family: "NotoRegular";
+}
+
+.john-doe {
+  background: url(../imgs/camera.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 4em 0 5em;
+}
+.john-doe p {
+  font-size: 0.75em;
+  font-family: "NotoLight";
+}
+.john-doe ul {
+  padding: 0;
+}
+.john-doe ul li {
+  display: inline;
+  text-align: center;
+}
+.john-doe ul li:not(:first-child) {
+  margin-left: 1em;
+}
+.john-doe ul li i {
+  font-size: 2.5em;
+  margin: 0.2em 0 0;
+}
+@media only screen and (max-width: 480px) {
+  .john-doe {
+    background-position: 82em 0;
+  }
+}
+
+.social {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all ease 0.5s;
+}
+.social:hover {
+  color: #4bcaff;
+  border: 2px solid #4bcaff;
+}
+
+.testimonials {
+  padding: 3em 0 2em;
+}
+.testimonials i {
+  position: absolute;
+  right: 0;
+  font-size: 2.5em;
+}
+.testimonials p {
+  font-size: 1.7em;
+  font-family: "NotoLight";
+}
+
+.name-testimonial {
+  color: #4bcaff;
+  font-size: 0.75em !important;
+  font-family: "NotoLight";
+}
+
+.contact {
+  background: url(../imgs/contact.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 4em 0;
+}
+.contact p {
+  font-size: 0.75em;
+  font-family: "NotoRegular";
+}
+.contact label {
+  width: 100%;
+  font-family: "NotoBold";
+  font-size: 0.75em;
+}
+.contact input[type=text] {
+  width: 90%;
+  border: 1px solid #fff;
+  background: no-repeat;
+  padding: 1em;
+  color: #fff;
+}
+.contact textarea {
+  width: 100%;
+  background: none;
+  border: 1px solid #fff;
+  background: no-repeat;
+  padding: 1em;
+  color: #fff;
+}
+.contact input[type=submit] {
+  font-family: "NotoBold";
+  background: #4bcaff;
+  padding: 1em 8em;
+  border: none;
+  color: #fff;
+  transition: all ease 0.5s;
+}
+.contact input[type=submit]:hover {
+  color: #4bcaff;
+  background: #fff;
+}
+
+.nav-bottom ul {
+  float: left;
+  margin: 0.6em 0 0;
+  padding: 0;
+}
+.nav-bottom ul li {
+  display: inline;
+  font-family: "NotoBold";
+  font-size: 0.9em;
+  padding: 1em 0 0 1em;
+}
+.nav-bottom ul li:not(:last-child):after {
+  content: "|";
+  padding-left: 1em;
+  color: #06090b;
+}
+.nav-bottom ul li a {
+  display: inline-block;
+  color: #06090b;
+  text-decoration: none;
+}
+.nav-bottom ul li a:hover {
+  color: #4bcaff;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
