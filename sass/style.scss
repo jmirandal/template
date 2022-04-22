@@ -1,0 +1,43 @@
+@use 'reset';
+@use 'vars';
+@use 'typography';
+@use 'utils';
+
+body{
+    background-color: vars.$clr-dark-bg;
+    @include typography.set-font(vars.$ff-sans, vars.$fw-light, vars.$fs-base);
+}
+
+header{
+    background-image: url(../imgs/header.jpg);
+    background-size: cover;
+}
+
+h1{
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    @include typography.set-font(vars.$ff-sans, vars.$fw-light, vars.$fs-big);
+    line-height: 2em;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 1em;
+}
+
+.main-title-bg{
+    background-color: vars.$clr-dark-bg;
+    padding: 0 .5em;
+}
+
+.services{
+    background-color: vars.$clr-light-blue;
+    color: vars.$clr-white;
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.wh-line{
+    @include utils.set-line(.2, vars.$clr-white);
+}

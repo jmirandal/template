@@ -1,0 +1,38 @@
+@use 'vars';
+
+/*buttons*/
+@mixin btn($shadow, $border, $bg, $color) {
+    position: relative;
+    display: table-cell; //inline-grid
+    place-items: center;
+    padding: 1em 2em;
+    border-radius: 5em;
+    aspect-ratio: 1;
+    text-decoration: none;
+    font-family: vars.$ff-sans-thin;
+    font-size: vars.$fs-btn;
+    border: $border;
+    @if($shadow){
+        box-shadow: 0.13em 0.3em 1em vars.$clr-light-gray;
+    }
+    background-color: $bg;
+    color: $color;
+    ;
+}
+
+@mixin cart($bg:vars.$clr-black){
+    position: absolute;
+    display: table-cell; //inline-grid
+    top: 2em;
+    right: 2em;
+    place-items: center;
+    padding: 0 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 5em;
+    aspect-ratio: 1;
+    text-decoration: none;
+    background-color: $bg;
+    border: none;
+}

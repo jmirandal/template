@@ -1,0 +1,117 @@
+/* RESET */
+/* box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+/* margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+/* set up body*/
+body {
+  line-height: 1.2;
+  max-height: 100vh;
+}
+
+/* images*/
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* forms */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*colors*/
+/*font-sizes*/
+/*font-families*/
+/*font-weights*/
+/*set fonts for sections/titles*/
+body {
+  background-color: #404a52;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+}
+
+header {
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+}
+
+h1 {
+  width: 100%;
+  padding-top: 5em;
+  padding-bottom: 3em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.625rem;
+  color: #FFFFFF;
+  line-height: 2em;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+.main-title-bg {
+  background-color: #404a52;
+  padding: 0 0.5em;
+}
+
+.services {
+  background-color: #4bcaff;
+  color: #FFFFFF;
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+
+.wh-line:after {
+  content: "";
+  display: block;
+  width: 1.7em;
+  padding-top: 0.25em;
+  border-bottom: 0.2em solid #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */

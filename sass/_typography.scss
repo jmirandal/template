@@ -1,0 +1,9 @@
+@use 'vars';
+
+/*set fonts for sections/titles*/
+@mixin set-font($family, $weight, $size, $color:vars.$clr-white) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
